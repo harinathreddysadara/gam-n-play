@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+@mixin iphone-portrait {
+  @media (min-width: $min-width-iphone5s-SE) and (max-width: $max-width-iphone-11-XR-XSmax) and (orientation: 'portrait') {
+    @content;
+  }
+}
+@mixin iphone-landscape {
+  @media (min-width: $min-width-iphone5s-SE) and (max-width: $max-width-iphone-11-XR-XSmax) and (orientation: 'landscape') {
+    @content;
+  }
+}
+@mixin iphone-5se-potrait {
+  @media only screen and (min-width: $min-width-iphone5s-SE) and (max-width: $min-width-iphone5s-SE) and (orientation: 'portrait') {
+    @content;
+  }
+}
+@mixin iphone6-7-8-potrait {
+  @media only screen and (min-width: $min-width-iphone6-7-8) and (max-width: $min-width-iphone6-7-8) and (orientation: 'portrait') {
+    @content;
+  }
+}
+@mixin ipad-10-portrait {
+  @media only screen and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  @content;
+  } 
+ }
+ @mixin ipad-10-landscape{
+  @media only screen and (min-width: 1112px) and (max-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  @content;
+  } 
+ }
+ @mixin ipad-default-landscape{
+  @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  @content;
+  } 
+ }
+ @mixin ipad-default-portrait{
+  @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  @content;
+  } 
+ }
+@mixin ipad-portrait {
+  @media (min-width: $min-width-ipad-pro) and (max-width: $max-width-ipad-pro) and (orientation: 'portrait') {
+    @content;
+  }
+}
+@mixin ipad-landscape {
+  @media (min-width: $min-width-ipad-pro) and (max-width: $max-width-ipad-pro) and (orientation: 'landscape') {
+    @content;
+  }
+}
+@mixin computers {
+  @media (min-width: $min-width-laptop-and-desktop) and (max-width: $max-width-laptop-and-desktop) {
+    @content;
+  }
+}
+@mixin larger-screens {
+  @media (min-width: $min-width-larger-screens) {
+    @content;
+  }
+}

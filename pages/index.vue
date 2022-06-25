@@ -1,10 +1,6 @@
 <template>
   <div>
     <Header />
-    <Header />
-    <Header />
-    <Header />
-    <Header />
 
   </div>
 </template>
